@@ -1,12 +1,12 @@
 <nav
-    class="fixed top-0 left-1/2 z-50 h-[58px] w-[calc(100%-2rem)] max-w-[1238px] -translate-x-1/2 rounded-[24px] border-2 border-white bg-white/30 backdrop-blur-md md:h-[64px]">
+    class="fixed top-0 left-1/2 z-50 h-[58px] w-[calc(100%-2rem)] max-w-[1238px] -translate-x-1/2 rounded-[24px] border-2 border-white bg-gray-900/30 backdrop-blur-md md:h-[64px]">
     <div class="h-full px-3 sm:px-6">
         <div class="flex h-full items-center justify-between">
 
             {{-- Logo --}}
             <div class="flex items-center gap-3">
                 <a href="{{ route('home') }}" class="flex items-center gap-3 group">
-                    <img src="{{ asset('images/Logo.png') }}" alt="Logo GKPB"
+                    <img src="{{ asset('/assets/images/Logo.png') }}" alt="Logo GKPB"
                         class="h-10 w-auto drop-shadow-sm transition-transform duration-200 group-hover:scale-105"
                         onerror="this.style.display='none'" />
                     <span class="font-semibold text-white text-sm tracking-wide hidden sm:block">
@@ -51,7 +51,7 @@
 
     {{-- Mobile Menu --}}
     <div id="mobile-menu"
-        class="absolute left-0 right-0 top-full mt-2 hidden rounded-2xl border border-white/30 bg-black backdrop-blur-[2.5px] md:hidden">
+        class="absolute left-0 right-0 top-full mt-2 hidden rounded-2xl border border-white/30 bg-gray-900/30 backdrop-blur-[2.5px] md:hidden">
         <div class="px-4 py-3 space-y-1">
             <a href="{{ route('home') }}"
                 class="block px-4 py-2 rounded-lg text-sm font-medium text-white/90 hover:text-white hover:bg-white/10 transition-all duration-200">
