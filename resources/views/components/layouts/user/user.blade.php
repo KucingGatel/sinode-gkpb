@@ -1,12 +1,9 @@
 <x-layouts.app>
     <x-main.user.navbar />
 
-    {{-- {{ $slot }}
-    @if (Auth::check() && request()->path() !== 'login' && request()->path() !== 'register')
-        <x-ui.user.cta />
-    @endif --}}
+    {{ $slot }}
 
-    {{-- <x-main.user.footer /> --}}
+    <x-main.user.footer />
 
     {{-- Flash Messages --}}
     {{-- <div class="fixed top-20 right-6 z-50 space-y-4">
